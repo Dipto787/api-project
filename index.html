@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    *{
+        font-family: "Lato", sans-serif; 
+    }
+    html {
+   scroll-behavior: smooth;
+}
+</style>
+<body>
+    <header class="bg-[#F3F8FF] container mx-auto py-9">
+       <nav class="flex justify-between px-5 lg:px-20 items-center py-5">
+        <h1 class="lg:text-3xl  text-2xl font-bold ">Hot Gadgets</h1>
+        <button class="btn text-white bg-[#0D6EFD] border-none px-10 btn-primary">Sign Up</button>
+       </nav>
+       <div class="lg:w-3/6 my-8 text-center mx-auto">
+        <h1 class="lg:text-5xl text-3xl text-center text-[#100F0F] font-bold">Apple Iphone 13 Pro Max</h1>
+        <p class="text-center mt-4 ">There are many variations of passages of Lorem Ipsum available, but the majority  have suffered alteration in some form, by injected human.</p>
+       <a href="#schorll"> <button class="text-white mt-3 btn btn-primary">Buy Now</button></a>
+       </div>
+    </header>
+
+    <main class="container mx-auto ">
+       
+        <section class="flex justify-center">
+        <div class=" w-52 animate-bounce"><img src="pngwing 3.png" alt=""></div>
+        <div class="w-38 lg:w-64"><img src="pngwing 1.png" alt=""></div>
+        <div class=" w-52 animate-bounce"><img src="pngwing 3.png" alt=""></div>
+        </section>
+
+<div id="schorll">
+    <h1 class="text-4xl font-bold text-center mb-5">Search Phone Here</h1>
+    <div class="px-2 mb-5">
+        <div class="gap-5 bg-[#000] w-full  lg:w-3/6 items-center mx-auto p-5 rounded-3xl mb-5 justify-center  flex  ">
+            <input id="input" type="text" placeholder="Search Here....." class="input  p-8 border-none bg-[#ffffff] input-bordered  lg:w-11/12" /><button onclick="searchPhone()" class="btn lg:px-10 lg:h-16  btn-secondary">Search</button>
+        </div>
+    </div>
+
+    <div id="loading" class="text-center mt-32 mb-4 hidden ">
+        <span class="loading loading-spinner loading-lg"></span>
+    </div>
+    
+    <section id="phoneContainer" class="grid bg-gradient-to-r from-[#ddd] to-[#ddd] p-10 grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-8">
+
+    </section>
+    
+    <section id="notDataAvailavle" class=" hidden py-32">
+        <div class="flex justify-center"> 
+            <img src="Icon.png" alt="">
+        </div>
+        <h1 class="text-4xl text-center">No Data Available</h1>
+        <h1 id="input-values" class="text-2xl text-red-500 text-center"></h1>
+    </section>
+    <div>
+        </div>
+           
+ 
+<dialog id="show_Details" class="modal">
+  <div class="modal-box p-5">
+   
+    <div id="showDetailsContainer">
+        
+    </div>
+   
+     
+    <div class="modal-action m-0">
+        <form method="dialog">
+          
+          <button class="bg-[#ddd] px-5 py-3 border-2  rounded-full"><i class="fa-solid text-4xl fa-xmark"></i></button>
+        </form>
+      </div>
+
+  </div>
+</dialog>
+        </div>
+
+<div id="showAll" class="mt-2 mb-2 hidden">
+    <button class="btn btn-secondary px-10">Show All <i class="fa-solid fa-arrow-right-long"></i></button>
+
+</div>    </main>
+    <script src="script.js"></script>
+</body>
+</html>
